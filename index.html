@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @font-face {
+      font-family:'Inter-400';
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family:'Inter-600';
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family:'Inte-700';
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    :root {
+      --Green: hsl(75, 94%, 57%);
+      --White: hsl(0, 0%, 100%);
+      --Grey-700: hsl(0, 0%, 20%);
+      --Grey-800: hsl(0, 0%, 12%);
+      --Grey-900: hsl(0, 0%, 8%);
+      --md: 14px;
+      --heading: 'Inter-600';
+      --main-font: 'Inter-400';
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--Grey-900);
+      font-family: var(--main-font);
+      font-size: var(--md);
+      color: var(--White);
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .social-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3rem;
+      width: 23.5rem;
+      height: 37.5rem;
+      background-color: var(--Grey-800);
+      border-radius: 1rem;
+    }
+
+    .profileIcon.container {
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 0.5rem;
+    }
+
+    .profileIcon-container img {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 50%;
+      padding: 24px 0px 24px 0px;
+
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-info p strong {
+      color: var(--Green)
+    }
+
+    .social-links button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--Grey-700);
+      border: none;
+      margin: 0.87rem;
+      width: 20rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .social-links button a {
+      color: var(--White);
+      text-decoration: none;
+      font-family: var(--heading);
+    }
+
+    .social-links button:hover {
+      background-color: var(--Green);
+      cursor: pointer;
+    }
+  
+    .social-links button:hover > a {
+      color: var(--Grey-900);
+    }
+
+    .attribution { 
+      font-size: 11px;
+      text-align: center;
+      justify-content: flex-end;
+    }
+    .attribution a { color: var(--Green); }
+
+    @media (max-width:640px) {
+      .social-container {
+        justify-content: center;
+      }
+
+      .attribution {
+        padding: 8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="social-container">
+    <div class="profileIcon-container">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="jessica's-avatar">
+    </div>
+    <div class="profile-info">
+      <h1>Jessica Randall</h1>
+      <p><strong>London, United Kingdom</strong></p>
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+
+    <div class="social-links">
+      <button><a href="/">GitHub</a></button>
+      <button><a href="/">Frontend Mentor</a></button>
+      <button><a href="/">LinkedIn</a></button>
+      <button><a href="/">Twitter</a></button>
+      <button><a href="/">Instagram</a></button>
+    </div>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/juliettedb-v">Juliette Villarroel</a>.
+  </footer>
+</body>
+</html>
